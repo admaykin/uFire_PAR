@@ -1,0 +1,20 @@
+{
+  "name": "uFire PAR Sensor",
+  "keywords": "par, photosynthetical, active, radiation, hydroponics",
+  "description": "Measure photosynthetically active radiation (PAR).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/u-fire/uFire_PAR.git"
+  },
+  "authors": [
+    {
+      "name": "uFire",
+      "email": "contact@ufire.co",
+      "url": "http://ufire.co",
+      "maintainer": true
+    }
+  ],
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
