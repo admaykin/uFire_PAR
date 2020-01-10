@@ -9,13 +9,13 @@ class PARShell(cmd.Cmd):
 
     def do_config(self, a):
         """prints out all the configuration data\nparameters: none"""
-        print("PAR Interface Config: " + 'connected' if ec.connected() else '**disconnected**')
+        print("PAR Interface Config: " + 'connected' if par.connected() else '**disconnected**')
         print("\tversion: " + (str(par.getVersion())) + "." + (str(par.getFirmware())))
 
     def do_par(self, line):
         """starts an PAR measurement"""
         par.measurePAR()
-        print("ppdf: " + str(par.ppdf))
+        print("ppfd: " + str(par.ppfd))
 
     def do_version(self, a):
         """prints the version register"""
@@ -36,4 +36,4 @@ class PARShell(cmd.Cmd):
         return True
 
 
-ECShell().cmdloop()
+PARShell().cmdloop()
